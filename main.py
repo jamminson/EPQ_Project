@@ -1,4 +1,4 @@
-import preprocessing
+from EDA_Intial_Preprocessing import preprocessing
 import pandas as pd
 
 df = pd.read_csv('data.csv')
