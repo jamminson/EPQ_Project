@@ -107,4 +107,4 @@ class Preprocessing:
         self.encode_features()
         self.split_data()
         standard_data, norm_data, unit_data = self.scale_features()
-        return standard_data, norm_data, unit_data
+        return [standard_data, norm_data, unit_data]
