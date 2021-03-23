@@ -55,7 +55,7 @@ def implement_cv_ff(models, whole_data, splits):
             x_train, x_test = x.loc[train_index_first:train_index_last], x.loc[test_index_first:test_index_last]
             y_train, y_test = y[train_index_first:train_index_last + 1], y[test_index_first:test_index_last + 1]
 
-            models[model].fit(x_train, y_train, epochs=150, batch_size=10)
+            models[model].fit(x_train, y_train, epochs=150, batch_size=10, verbose=0)
 
             f_beta, balanced_accuracy, auc = ff_setup_evaluation(models[model],
                                                                  [x_train, x_test, y_train, y_test])

@@ -21,7 +21,7 @@ def define_empty_model():
 
 def get_feed_forward(data):
     model = define_empty_model()
-    model.fit(data[0], data[2], epochs=150, batch_size=10)
+    model.fit(data[0], data[2], epochs=150, batch_size=10, verbose=0)
 
     return model
 
